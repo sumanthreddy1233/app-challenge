@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+</head>
+<body>
+    <h1> Celcius to Fahrenhet</h2>
+        
+
+<p>Input degrees :</p>
+
+<p><input id="c" onkeyup="convert('C')">  Celsius</p>
+
+<p><input id="f" onkeyup="convert('F')"> Fahrenheit</p> 
+
+<script>
+    function convert(degree) {
+      var x;
+      if (degree == "C") {
+        x = document.getElementById("c").value + 273.15;
+        document.getElementById("f").value = x;
+      }
+    }
+    </script>
+
+
+
+</body>
+</html>
