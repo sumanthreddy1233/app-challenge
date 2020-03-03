@@ -1,9 +1,7 @@
-<script>
-    function convert(degree) {
-      var x;
-      if (degree == "C") {
-        x = document.getElementById("c").value + 273.15;
-        document.getElementById("f").value = x;
-      }
-    }
-    </script>
+function temperatureConverter() 
+{
+  var temp=document.getElementById("inputCelsius").value;
+  var valNum = parseFloat(temp);
+  document.getElementById("outputKelvin").innerHTML=valNum+273.15;
+}
+    

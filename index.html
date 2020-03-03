@@ -1,31 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature converter</title>
-</head>
+<html>
+<title>Celsius to Kelvin Temperature Converter</title>
 <body>
-    <h1> Celcius to Fahrenhet</h2>
-        
 
-<p>Input degrees :</p>
+<h1>Temperature Converter</h1>
+<p>Type a value in the Celsius field to convert the value to Kelvin:</p>
 
-<p><input id="c" onkeyup="convert('C')">  Celsius</p>
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" >
+</p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+<button onclick="temperatureConverter()">convert</button>
 
-<p><input id="f" onkeyup="convert('F')"> Fahrenheit</p> 
-
-<script>
-    function convert(degree) {
-      var x;
-      if (degree == "C") {
-        x = document.getElementById("c").value + 273.15;
-        document.getElementById("f").value = x;
-      }
-    }
-    </script>
-
-
+<script src="converter.js"></script>
 
 </body>
 </html>

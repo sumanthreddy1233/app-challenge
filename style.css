@@ -1,0 +1,14 @@
+p{
+  
+    align-items: center;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-shadow: aqua;
+    text-decoration-color: blue;
+}   
+
+.number{
+    border-width: 50%;
+}
